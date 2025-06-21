@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  background-color: rgb(31, 31, 31);
+}
+.icon {
+  width: 140px;
+}
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  background-color: rgb(31, 31, 31);
+}
+.nav-punkt {
+  font-family: Bebas Neue;
+  font-size: 30px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.coteiner {
+  background-image: url(./image/BMTHVV11-_MAIN-IMAGE_-scaled.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 810px;
+}
+.bmth {
+  font-family: Kapakana;
+  color: white;
+  position: absolute;
+  margin-top: 140px;
+  margin-left: 1300px;
+  font-size: 50px;
+  background-color: transparent;
+}
+.youtopia {
+  font-family: Bebas Neue;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+.descript {
+  font-family: Bebas Neue;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.source {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+.text_footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Bebas Neue;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  margin-top: 10px;
+}
+.title {
+  font-family: Bebas Neue;
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+}
+.paragrov {
+  font-family: Bebas Neue;
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+}
+.conter {
+  align-items: center;
+  display: flex;
+  margin-left: 150px;
+  gap: 250px;
+}
+.catalog {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+.title_albums {
+  font-family: Bebas Neue;
+  font-size: 60px;
+  color: rgb(255, 255, 255);
+  margin-top: 130px;
+  margin-bottom: 40px;
+}
+.img_album {
+  position: relative;
+  width: 750px;
+  height: auto;
+  overflow: hidden;
+}
+.img_album img {
+  width: 100%;
+  display: block;
+  transition: 0.5s ease;
+}
+.img_album .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+  opacity: 0;
+  transition: 0.5s ease;
+  text-align: center;
+  padding: 20px;
+}
+.img_album:hover img {
+  transform: scale(1.05);
+  filter: brightness(50%);
+}
+.img_album:hover .overlay {
+  opacity: 1;
+}
+.title_picture {
+  font-family: Bebas Neue;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+}
+.paragrov_picture {
+  font-family: Bebas Neue;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+.button_picture {
+  width: 100px;
+  height: 40px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(31, 31, 31);
+  font-family: Bebas Neue;
+  font-size: 20px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.overlay-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  background-color: transparent;
+}
+header {
+  position: fixed; /* закрепляет элемент */
+  top: 0; /* отступ от верхнего края = 0 */
+  left: 0;
+  width: 100%; /* на всю ширину экрана */
+
+  color: white;
+  z-index: 1000; /* чтобы был поверх других блоков */
+}
